@@ -1,0 +1,46 @@
+<footer class="site-footer">
+  <div class="container">
+    
+      <nav class="footer-links">
+        
+          <ul class="unstyled">
+            
+	      <li class="footer">
+                <form action="http://odaa.us5.list-manage1.com/subscribe/post?u=78ef4b94a7d1865894df78e68&amp;id=28f6dabe60" class="newsletter-form validate" method="post" novalidate="" target="_blank">
+                  Tilmeld dig vores nyhedsbrev
+                  <div class="newsletter-field-group"><input class="email newsletter-field required" name="EMAIL" placeholder="Email adresse" type="email" value="" />&nbsp;<input class="button submit-button newsletter-button" name="subscribe" type="submit" value="Tilmeld" /></div>
+                </form>
+              </li>	              
+              <li class="footer">
+                <script type="text/javascript">
+                <!--
+                  var string1 = "info";
+                  var string2 = "@";
+                  var string3 = "odaa.dk";
+                  var string4 = string1 + string2 + string3;
+                  document.write("<a href=" + "mail" + "to:" + string1 + string2 + string3 + ">" + string4 + "</a>");
+                //-->
+                </script>
+              </li>
+              <li class="footer">
+                  <a href="https://twitter.com/OpenDataAarhus" target="_blank">
+                      <img src="/base/image/twitter.png" width="20px" height="20px" />
+                      @OpenDataAarhus
+                  </a>
+              </li>                                          	    
+              <li class="footer" style="color: #ffffff !important; font-size: 12px !important ; font-style: italic !important; line-height: 16px !important; padding-top: 25px !important; width: 100% !important;">
+                Vi samler statistik og husker dine præferencer ved hjælp af cookies.<br>
+                Læs om cookies på Digitaliseringsstyrelsens hjemmeside <a href="http://www.digst.dk/Servicemenu/Cookies/om-cookies" target="_blank" style="text-decoration: underline !important;">her</a>.
+              </li>
+            
+          </ul>
+        
+      </nav>
+    
+  </div>
+  {% block footer_debug %}
+    {% if g.debug %}
+      {% include 'snippets/debug.html' %}
+    {% endif %}
+  {% endblock %}
+</footer>

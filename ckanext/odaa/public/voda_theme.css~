@@ -1,0 +1,37 @@
+.account-masthead {
+	background-color: #000000;		
+}
+
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li.active a {
+	background-color: #ffffff;		
+	color: #000000;
+}
+
+.masthead {
+	background-color: #4A8601;
+}
+
+
+
+.masthead .nav a {
+	background-color: #000000;		
+	color: #ffffff;
+}
+
+.homepage .module-search .module-content {
+	background-color: #4A8601;
+}
+
+.homepage .module-search .tags {
+    background-color: #000000;
+}
+
+.hero {
+	background: url('/base/image/vejleBolge1288x424.jpg') repeat scroll 0% 0%;
+	background-size: 1288px 424px;
+        background-repeat: no-repeat;
+}
+
+
+
+

@@ -1,0 +1,85 @@
+.account-masthead {
+	background-color: #96ae24;		
+}
+
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li.active a {
+	background-color: #ffffff;		
+	color: #000000;
+}
+
+.masthead .nav > li > a, .masthead .nav > li > a:focus, .masthead .nav > li > a:hover, .masthead .nav > .active > a, .masthead .nav > .active > a:hover, .masthead .nav > .active > a:focus {
+	color: #000000;
+}
+
+.account-masthead .account ul li a {
+    color: #ffffff;
+}
+
+.account-masthead .account ul li {
+    border-left: 1px solid #96ae24;
+}
+
+.masthead {
+	background-color: #ffffff;
+	background: url("") repeat scroll 0% 0% #ffffff;
+	color: #000000;
+	padding: 5px;
+}
+
+
+
+.masthead .nav a {
+	color: #000000;
+}
+
+.homepage .module-search .module-content {
+	background-color: #96ae24;
+}
+
+.homepage .module-search .tags {
+ 	background-color: #7e911d;
+}
+
+.hero {
+	background: url('/base/image/DOKK1 i modlys.jpg') no-repeat scroll center / cover !important;
+}
+
+.site-footer {
+	background-color: #000000;
+}
+
+.newsletter-signup {
+        font-family: "LaconicRegular","exo-regular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+        font-style: normal;
+        font-weight: normal;
+}
+
+.newsletter-button {
+        font-family: "LaconicRegular","exo-regular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;        
+        border-radius: 2px;
+        background-color: #96ae24;
+        border: 0px none;
+        color: #FFF;
+        position: relative;
+        top: -5px;
+        height: 30px;
+        width: 90px !important;
+}
+
+.newsletter-form {
+	display: inline;
+}
+
+.cookies {
+        font-size: 12px !important;
+        font-style: italic !important;
+}
+
+li.footer {
+	float: left !important;
+	padding-right: 30px !important;
+}
+
+.site-footer .container {
+	background: transparent url("base/image/Smart-Aarhus.png") no-repeat scroll right top !important;
+}

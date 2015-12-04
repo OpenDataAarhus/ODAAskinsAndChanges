@@ -1,0 +1,11 @@
+setup.py
+ckanext/__init__.py
+ckanext/odaa/__init__.py
+ckanext/odaa/plugin.py
+ckanext_odaa.egg-info/PKG-INFO
+ckanext_odaa.egg-info/SOURCES.txt
+ckanext_odaa.egg-info/dependency_links.txt
+ckanext_odaa.egg-info/entry_points.txt
+ckanext_odaa.egg-info/namespace_packages.txt
+ckanext_odaa.egg-info/not-zip-safe
+ckanext_odaa.egg-info/top_level.txt

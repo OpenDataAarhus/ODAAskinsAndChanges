@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>questions</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+        function cancel() {                     
+                window.close();
+        }
+        
+        function neste() {              
+                document.getElementById("indledning").style.display="none";
+                document.getElementById("sporgsmal_12").style.display="";
+        }
+        
+        function neste34() {            
+                document.getElementById("sporgsmal_34").style.display="";
+                document.getElementById("sporgsmal_12").style.display="none";
+        }
+        
+        function neste5() {             
+                document.getElementById("sporgsmal_34").style.display="none";
+                document.getElementById("sporgsmal_5").style.display="";
+        }
+        
+        function tilbage() {
+                document.getElementById("indledning").style.display="";
+                document.getElementById("sporgsmal_12").style.display="none";
+        }
+        
+        function tilbage12() {
+                document.getElementById("sporgsmal_34").style.display="none";
+                document.getElementById("sporgsmal_12").style.display="";
+        }
+        
+        function tilbage34() {
+                document.getElementById("sporgsmal_5").style.display="none";
+                document.getElementById("sporgsmal_34").style.display="";
+        }
+        
+        function spg4OnChange(sel) {
+                var value = sel.value;          
+                if (value=="Andet") {                       
+					document.getElementById("idSpg4Andet").style.display="";
+                } else {                      
+					document.getElementById("idSpg4Andet").style.display="none";
+                }               
+        }
+</script>
+  </head>
+  <body>
+    <div class="container">
+	  <form method="post" action="http://127.0.0.1:5000/hello/index">
+      <br />
+      <div class="form-group">
+        <div id="sporgsmal_12" style="display:;">
+          <div style="height:300px">
+          <label for="spg1">Spørgsmål 1): Hvad er din relation til arbejdsmarkedet?</label>
+          <div class="row">
+          <span class="col-xs-8 text-left" style="">
+            <label>Jeg er:</label>
+          </span> 
+          <span class="col-xs-8 text-right" style="">
+            <select class="form-control" id="spg1">
+              <option>Lønmodtager i det offentlige</option>
+              <option>Lønmodtager i det private</option>
+              <option>Arbejdssøgende</option>
+              <option>Studerende</option>
+              <option>Udenfor arbejdsmarkedet (pensioneret, uarbejdsdygtig mm)</option>
+              <option>Ønsker ikke at svare</option>
+            </select>
+          </span></div>
+          <br />
+          <label for="spg2">Spørgsmål 2): Hvor hyppigt benytter du www.odaa.dk?</label> 
+          <select class="form-control" id="spg2">
+            <option>Dagligt</option>
+            <option>Ugentligt</option>
+            <option>Månedligt</option>
+            <option>Kvartalsmæssigt</option>
+            <option>Sjældnere</option>
+            <option>Ønsker ikke at svare</option>
+          </select></div>
+          <div class="row">
+          <span class="col-xs-3 text-center" style="">
+            <button type="button" onclick="cancel()" class="btn btn-default">Fortryd.</button>
+          </span> 
+		  <span class="col-xs-3 text-center" style="">            
+          </span>
+          <span class="col-xs-3 text-center" style="">
+            <button type="button" onclick="neste34()" class="btn btn-default">Næste.</button>
+          </span></div>
+        </div>
+        <div id="sporgsmal_34" style="display:none">
+          <div style="height:300px">
+          <label for="spg3">Spørgsmål 3): Hvordan bruger du ODAA’s data? (Vælg gerne flere)</label> 
+          <select class="form-control" id="spg3" multiple="multiple">
+            <option>Bruger dataen i forbindelse med mit arbejde</option>
+            <option>Bruger dataen til privat udvikling (app’s, webservices mm.)</option>
+            <option>Bruger dataen til at lave datajournalistik</option>
+            <option>Bruger data i forbindelse med studiet</option>
+            <option>Er bare nysgerrig</option>
+            <option>Andet</option>
+            <option>Ønsker ikke at svare</option>
+          </select>
+          <br />
+          <label for="spg4">Spørgsmål 4): Hvordan har du fået kendskab til ODAA?</label> 
+          <select class="form-control" id="spg4" onchange="spg4OnChange(this)">
+            <option>Har selv aktivt opsøgt og fundet portalen (fx via Google)</option>
+            <option>Er blevet henvist af bekendte/kolleger</option>
+            <option>Har fundet portalen via sociale medier</option>
+            <option>Hørte om portalen gennem nyhedsmedier (aviser, blogs mm).</option>
+            <option>Hørte om portalen til et møde/workshop/konference</option>
+            <option>Andet</option>
+            <option>Ønsker ikke at svare</option>
+          </select>
+          <br />
+          <div id="idSpg4Andet" style="display:none">
+          <label for="andet">Andet:</label> 
+          <input type="text" class="form-control" id="andet" /></div></div>
+          <div class="row">
+		  <span class="col-xs-3 text-center" style="">
+            <button type="button" onclick="cancel()" class="btn btn-default">Fortryd.</button>
+          </span>
+          <span class="col-xs-3 text-center" style="">
+            <button type="button" onclick="tilbage12()" class="btn btn-default">Tilbage.</button>
+          </span> 
+          <span class="col-xs-3 text-center" style="">
+            <button type="button" onclick="neste5()" class="btn btn-default">Næste.</button>
+          </span></div>
+        </div>
+        <div id="sporgsmal_5" style="display:none">
+          <div style="height:300px">
+          <label for="spg5">Spørgsmål 5): Hvilke slags data vil du gerne se mere af på ODAA? (vælg gerne flere)</label> 
+          <select class="form-control" id="spg5" multiple="multiple">
+            <option>Natur og miljø</option>
+            <option>Geografi</option>
+            <option>Klima og forurening</option>
+            <option>Trafik</option>
+            <option>Offentlig administration</option>
+            <option>Demografi</option>
+            <option>Kultur</option>
+            <option>Andet</option>
+            <option>Ønsker ikke at svare</option>
+          </select>
+          <br />
+          <label>Mange tak for din hjælp!</label></div>
+          <div class="row">
+          
+		  <span class="col-xs-3 text-center" style="">
+            <button type="button" onclick="cancel()" class="btn btn-default">Fortryd</button>
+          </span> 		  
+          <span class="col-xs-3 text-center" style="">
+            <button type="button" onclick="tilbage34()" class="btn btn-default">Tilbage.</button>
+          </span> 
+		  <span class="col-xs-3 text-center" style="">
+		  </span> 
+          <span class="col-xs-3 text-center" style="">
+            <button type="submit" onclick="gem()" class="btn btn-default">Gem.</button>
+          </span>
+		  </div>
+        </div>
+      </div>
+	  </form>
+    </div>
+  </body>
+</html>
+

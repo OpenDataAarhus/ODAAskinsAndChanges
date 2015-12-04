@@ -1,0 +1,55 @@
+.account-masthead {
+	background-color: #96ae24;		
+}
+
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li.active a {
+	background-color: #ffffff;		
+	color: #000000;
+}
+
+.masthead .nav > li > a, .masthead .nav > li > a:focus, .masthead .nav > li > a:hover, .masthead .nav > .active > a, .masthead .nav > .active > a:hover, .masthead .nav > .active > a:focus {
+	color: #000000;
+}
+
+.account-masthead .account ul li a {
+    color: #ffffff;
+}
+
+.account-masthead .account ul li {
+    border-left: 1px solid #96ae24;
+}
+
+.masthead {
+	background-color: #ffffff;
+	background: url("") repeat scroll 0% 0% #ffffff;
+	color: #000000;
+	padding: 5px;
+}
+
+
+
+.masthead .nav a {
+	color: #000000;
+}
+
+.homepage .module-search .module-content {
+	background-color: #96ae24;
+}
+
+.homepage .module-search .tags {
+ 	background-color: #7e911d;
+}
+
+.hero {
+	background: url('/base/image/vejleBackImage.jpg') repeat scroll 0% 0%;
+	/*background-size: 1288px 424px;*/
+        background-repeat: no-repeat;
+}
+
+.site-footer {
+	background-color: #000000;
+}
+
+
+
+
