@@ -26,6 +26,7 @@ class PluginClass(plugins.SingletonPlugin):
     # Declare that this class implements IConfigurer.
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
+	plugins.implements(plugins.IRoutes, inherit=True)
 
     def update_config(self, config):
         # Add this plugin's templates dir to CKAN's extra_template_paths, so
@@ -39,3 +40,7 @@ class PluginClass(plugins.SingletonPlugin):
     def get_helpers(self):
         return {'cphopendata_latest_datasets': latest_datasets,
                 'cphopendata_most_popular_datasets': most_popular_datasets}
+	
+	def before_map(self, map):  
+        map.connect('/answers',controller='ckanext.mailNotifikation.controllers.answer:AnswersController', action='index')	
+	    
