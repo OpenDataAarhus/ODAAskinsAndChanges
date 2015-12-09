@@ -28,7 +28,8 @@
 	var ca = document.cookie.split(';');
         for(var i=0; i<ca.length; i++) {
             var c = ca[i].split("=");
-            if (c[0]==cname) {
+			var n = c[0].indexOf(cname);
+            if (n>-1) {           
                 return c[1]
             }	    
 	}    
